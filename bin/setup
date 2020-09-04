@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+const util = require("util");
+const repo = "https://github.com/FlashPanther/design.git";
+const exec = util.promisify(require("child_process").exec);
+
+let folderName = "design";
+if (process.argv.slice(2).length > 0) {
+  folderName = process.argv.slice(2)[0];
+}
+
+async function runShellCmd(command) {
+  try {
+    const { stdout, stderr } = await exec(command);
+    console.log(stdout);
+    console.log(stderr);
+  } catch {
+    (err) => {
+      console.error(err);
+    };
+  }
+}
+
+async function setup() {
+  try {
+    await runShellCmd(`git clone ${repo} ${folderName}`)
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+setup();

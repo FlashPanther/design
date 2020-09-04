@@ -1,0 +1,14 @@
+{
+  "name": "@thomas.devos/create-design",
+  "version": "0.0.5",
+  "description": "Design library",
+  "bin": "bin/setup",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1"
+  }
+}
