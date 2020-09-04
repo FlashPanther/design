@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/styles/default.min.css">
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+<nav>
+    <div>
+        <a href="#">Navbar</a>
+        <button type="button" data-toggle="collapse" data-target="#exampleNavbar" aria-controls="exampleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+        </button>
+        <div id="exampleNavbar">
+            <ul>
+                <li>
+                    <a class="active" aria-current="page" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><hr></li>
+                        <li><a href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section>
+    <h1>Navbar</h1>
+    <pre><code class="html">
+    &lt;nav&gt;
+        &lt;div&gt;
+            &lt;a href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
+            &lt;button type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#exampleNavbar&quot; aria-controls=&quot;exampleNavbar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                &lt;span&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div id=&quot;exampleNavbar&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;a class=&quot;active&quot; aria-current=&quot;page&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;dropdown&quot;&gt;
+                        &lt;a href=&quot;#&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+                            Dropdown
+                        &lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;hr&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a class=&quot;disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    </code></pre>
+</section>
+
+<script src="dist/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@import "~bootstrap/scss/bootstrap";
+
+body>section{
+  @extend .container;
+}
+
+nav{
+  @extend .navbar, .navbar-expand-lg, .navbar-light, .bg-light;
+  @extend .shadow-lg, .mb-5;
+  >div{
+    @extend .container-fluid;
+    >a{
+      @extend .navbar-brand;
+    }
+    >button{
+      @extend .navbar-toggler;
+      span{
+        @extend .navbar-toggler-icon;
+      }
+    }
+    >div{
+      @extend .collapse, .navbar-collapse;
+    }
+    ul{
+      @extend .navbar-nav, .mr-auto, .mb-2, .mb-lg-0;
+      li{
+        @extend .nav-item;
+        a{
+          @extend .nav-link;
+        }
+        &.dropdown{
+          >a{
+            @extend .dropdown-toggle;
+          }
+          ul li {
+            a {
+              @extend .dropdown-item;
+            }
+            hr{
+              @extend .dropdown-divider;
+            }
+          }
+        }
+      }
+    }
+  }
+}
